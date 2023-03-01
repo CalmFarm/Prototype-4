@@ -231,8 +231,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyPrefabs: {fileID: 1088032808827105856, guid: 75ebc45e2dc894d41a399fe77d3db0fc, type: 3}
   powerupPrefabs: {fileID: 7555535468416128567, guid: b2fff2b1b66bf8e4282ec2a408eaaee5, type: 3}
-  enemyCount: 0
-  waveNum: 1
 --- !u!4 &376994072
 Transform:
   m_ObjectHideFlags: 0
@@ -375,7 +373,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53984ca561dbd24489553961e3653ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 5
   hasPowerup: 0
   powerupIndicator: {fileID: 1035134581}
 --- !u!1 &691073543
@@ -932,7 +930,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3724a7bfc5d40d7499657f871151524f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 70
+  rotationSpeed: 50
 --- !u!4 &1417893315
 Transform:
   m_ObjectHideFlags: 0
@@ -1253,7 +1251,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1775435188}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1775435188
 MonoBehaviour:
   m_ObjectHideFlags: 0

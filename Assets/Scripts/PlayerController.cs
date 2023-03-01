@@ -4,27 +4,30 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public float speed = 5f;
+    [SerializeField]
+    private float speed = 5f;
     private float powerupStrength = 15f;
+    private float verticalInput;
+
+    public bool hasPowerup = false;
+
     private Rigidbody playerRb;
     private GameObject focalPoint;
-    float verticalInput;
-    public bool hasPowerup = false;
     public GameObject powerupIndicator;
-    // Start is called before the first frame update
+
     void Start()
     {
         playerRb = GetComponent<Rigidbody>();
         focalPoint = GameObject.Find("FocalPoint");
     }
 
-    // Update is called once per frame
     void Update()
     {
         float forwardInput = Input.GetAxis("Vertical");
         playerRb.AddForce(focalPoint.transform.forward * forwardInput * speed);
-        powerupIndicator.transform.position = transform.position + new Vector3(0, -0.5f, 0);
 
+        powerupIndicator.transform.position = transform.position + new Vector3(0, -0.5f, 0);
+        
         ExitGame();
     }
 
@@ -54,7 +57,7 @@ public class PlayerController : MonoBehaviour
 
             enemyRigidbody.AddForce(awayFromPlayer * powerupStrength, ForceMode.Impulse);
 
-            Debug.Log("Collided with: " + other.gameObject.name + " with power set up to " + hasPowerup);
+            // Debug.Log("Collided with: " + other.gameObject.name + " with power set up to " + hasPowerup);
         }
     }
 
@@ -67,6 +70,54 @@ public class PlayerController : MonoBehaviour
 #else
         Application.Quit();
 #endif
+        }
+    }
+
+    // private void Move()
+    // {
+    //     float forwardInput = Input.GetAxis("Vertical");
+    //     playerRb.AddForce(focalPoint.transform.forward * forwardInput * speed);
+
+    //     powerupIndicator.transform.position = transform.position + new Vector3(0, -0.5f, 0);
+    // }
+
+    public class Job // Inheritance Demonstration
+    {
+        private string name;
+        private int health;
+
+        public string Name //Demonstrate encapsulation
+        {
+            get { return name; }
+            set { name = value; }
+        }
+
+        public int Health //Demonstrate encapsulation
+        {
+            get { return health; }
+            set { health = value; }
+        }
+
+        public virtual void Skill()
+        {
+            Debug.Log("use the skill!");
+        }
+    }
+
+    public class Warrior : Job
+    {
+        public override void Skill() // overriding
+        {
+            Debug.Log("powerupStrength is doubled!");
+        }
+        
+    }
+
+    public class Thief : Job
+    {
+        public override void Skill() // overriding
+        {
+            Debug.Log("skill cooltime reduce half!");
         }
     }
 }

@@ -11,7 +11,6 @@ public class ClassButton : MonoBehaviour
     {
         button = GetComponent<Button>();
         button.onClick.AddListener(ChoiceClass);
-
         gameManager=GameObject.Find("GameManager").GetComponent<GameManager>();
     }
 
