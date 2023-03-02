@@ -1,5 +1,40 @@
 # Prototype-4
 
+
+Introduction to Code for Beginners
+This guide is designed to help beginners understand and improve their coding skills. It includes the following topics:
+
+Basic code interpretation
+Simple code improvement using IDE features
+Application scripting for beginners
+Using general logic structures to control code execution
+Writing code that utilizes various Unity APIs
+Utilizing appropriate data types
+Writing code that integrates with existing systems
+Implementing efficient and readable code styles
+Prototyping new concepts
+Basic debugging
+Diagnosing and fixing code that does not execute as expected after compilation
+Diagnosing and fixing common compilation errors
+Diagnosing and fixing compilation errors related to Unity's scripting API
+Diagnosing and fixing exceptions
+Intermediate application scripting
+Creating scene flows in application states
+Implementing data persistence across scenes and user sessions
+Basic version control
+Maintaining projects using appropriate version control practices
+Implementing best practices for version control using Unity Collaborate
+Basic code optimization
+Maximizing code efficiency by executing coding best practices
+Debugging performance issues
+Intermediate programming theory
+Analyzing the basic principles of Object-Oriented Programming (OOP)
+Implementing inheritance and polymorphism principles to improve code simplicity and usability
+Implementing abstraction and encapsulation principles, including the use of interfaces, to improve code safety and usability
+Implementing OOP principles to write efficient, systematic, and easy-to-understand code.
+This guide is suitable for those who are new to coding and want to develop their skills in application scripting, debugging, version control, code optimization, and programming theory.
+
+
 입문자를 위한 코드 이해
   간단한 코드 해석
   IDE 기능을 사용하여 간단한 코드 개선
