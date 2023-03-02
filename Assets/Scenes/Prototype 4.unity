@@ -373,7 +373,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53984ca561dbd24489553961e3653ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 7
   hasPowerup: 0
   powerupIndicator: {fileID: 1035134581}
 --- !u!1 &691073543
@@ -1167,7 +1167,7 @@ GameObject:
   - component: {fileID: 1775435189}
   - component: {fileID: 1775435188}
   - component: {fileID: 1775435187}
-  - component: {fileID: 1775435186}
+  - component: {fileID: 1775435190}
   m_Layer: 5
   m_Name: ThiefButton
   m_TagString: Untagged
@@ -1196,18 +1196,6 @@ RectTransform:
   m_AnchoredPosition: {x: 168, y: 0}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1775435186
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1775435184}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3c46394007c79af48bc9f40bb4658ce1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1775435187
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1302,6 +1290,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1775435184}
   m_CullTransparentMesh: 1
+--- !u!114 &1775435190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1775435184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c46394007c79af48bc9f40bb4658ce1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1783191809
 GameObject:
   m_ObjectHideFlags: 0
@@ -1449,7 +1449,7 @@ GameObject:
   - component: {fileID: 2001761443}
   - component: {fileID: 2001761442}
   - component: {fileID: 2001761441}
-  - component: {fileID: 2001761440}
+  - component: {fileID: 2001761444}
   m_Layer: 5
   m_Name: WarriorButton
   m_TagString: Untagged
@@ -1478,18 +1478,6 @@ RectTransform:
   m_AnchoredPosition: {x: -143, y: 0}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2001761440
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2001761438}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3c46394007c79af48bc9f40bb4658ce1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &2001761441
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1584,6 +1572,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2001761438}
   m_CullTransparentMesh: 1
+--- !u!114 &2001761444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2001761438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c46394007c79af48bc9f40bb4658ce1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2068357540
 GameObject:
   m_ObjectHideFlags: 0
